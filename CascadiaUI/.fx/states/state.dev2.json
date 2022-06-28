@@ -1,0 +1,42 @@
+{
+    "solution": {
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "rg-dev2-cascadia",
+        "location": "eastus",
+        "resourceNameSuffix": "dev2",
+        "provisionSucceeded": true,
+        "teamsAppTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "subscriptionId": "06790234-2e99-4c4a-a90a-992432d09347",
+        "subscriptionName": "Test Sub",
+        "tenantId": "2a097a23-470d-4cc4-87c6-e2e31553b16c"
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "teamsAppId": "4a0a5b4b-50c1-4061-b574-bd0587c8489f",
+        "teamsAppUpdatedAt": 1650470861704
+    },
+    "fx-resource-identity": {
+        "identityName": "cascadiamsdev27eef17",
+        "identityResourceId": "/subscriptions/06790234-2e99-4c4a-a90a-992432d09347/resourceGroups/rg-dev2-cascadia/providers/Microsoft.ManagedIdentity/userAssignedIdentities/cascadiamsdev27eef17",
+        "identityClientId": "479d05f7-9f70-4359-b113-f362dff57270"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "779024a6-2849-434a-ae70-c456ef7fad91",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "922e65c6-91bd-4528-bb52-0cc0be8f8be9",
+        "oauth2PermissionScopeId": "ccf51d0e-825a-4b7a-a27a-f31c29ad232c",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "applicationIdUris": "api://cascadiamsdev27eef17tab.z13.web.core.windows.net/779024a6-2849-434a-ae70-c456ef7fad91"
+    },
+    "fx-resource-function": {
+        "functionAppResourceId": "/subscriptions/06790234-2e99-4c4a-a90a-992432d09347/resourceGroups/rg-dev2-cascadia/providers/Microsoft.Web/sites/cascadiamsdev27eef17api"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "cascadiamsdev27eef17tab.z13.web.core.windows.net",
+        "endpoint": "https://cascadiamsdev27eef17tab.z13.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/06790234-2e99-4c4a-a90a-992432d09347/resourceGroups/rg-dev2-cascadia/providers/Microsoft.Storage/storageAccounts/cascadiamsdev27eef17tab"
+    }
+}
