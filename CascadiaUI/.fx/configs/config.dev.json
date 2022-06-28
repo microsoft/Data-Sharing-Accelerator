@@ -1,0 +1,11 @@
+{
+    "$schema": "https://aka.ms/teamsfx-env-config-schema",
+    "description": "You can customize the TeamsFx config for different environments. Visit https://aka.ms/teamsfx-env-config to learn more about this.",
+    "manifest": {
+        "appName": {
+            "short": "Cascadia",
+            "full": "Cascadia"
+        }
+    },
+    "reportendpoint": "https://msit.powerbi.com/view?r=eyJrIjoiNjFlMzNmNzEtNzgzMC00OGM3LWE5NjktZGRmMGRmZjA5YzAyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9"
+}

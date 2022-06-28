@@ -1,0 +1,28 @@
+{
+    "appName": "CascadiaMS",
+    "projectId": "b4df2655-68df-414a-a2b2-1cd2e75a8715",
+    "version": "2.1.0",
+    "isFromSample": false,
+    "solutionSettings": {
+        "name": "fx-solution-azure",
+        "version": "1.0.0",
+        "hostType": "Azure",
+        "azureResources": [
+            "function"
+        ],
+        "capabilities": [
+            "Tab",
+            "TabSSO"
+        ],
+        "activeResourcePlugins": [
+            "fx-resource-frontend-hosting",
+            "fx-resource-identity",
+            "fx-resource-aad-app-for-teams",
+            "fx-resource-function",
+            "fx-resource-local-debug",
+            "fx-resource-appstudio"
+        ]
+    },
+    "programmingLanguage": "typescript",
+    "defaultFunctionName": "getUserProfile"
+}
