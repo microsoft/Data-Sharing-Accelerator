@@ -124,8 +124,6 @@ namespace CascadiaWeb
 
             //JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApi(this.Configuration);
             services.AddAuthorization(options =>
                 {
                     options.AddPolicy("Read", policy =>
@@ -150,6 +148,8 @@ namespace CascadiaWeb
             }
             else
             {
+                services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddMicrosoftIdentityWebApi(this.Configuration);
                 services.AddTransient<IAuthorizationHandler, RoleAccessHandler>();
             }
 

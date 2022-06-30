@@ -50,9 +50,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "USE_IN_MEMORY_DB": "True",
         "DISABLE_EVENTHUB": "True",
-        "DISABLE_AUTH": "False",
-        "DISABLE_READ_ROLE": "False",
-        "DISABLE_READWRITE_ROLE": "False"
+        "DISABLE_AUTH": "True"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
