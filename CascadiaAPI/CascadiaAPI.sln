@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CascadiaAPI", "CascadiaAPI\CascadiaAPI.csproj", "{9FD0CAFF-C02C-4E06-9445-0748AAB88F7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{15E16F46-BD69-4B33-99F5-06117C2C3D43}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\requests.json = ..\..\..\..\Downloads\requests.json
+		sql.json = sql.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5E0B085-6AAE-4336-954B-90321BE14098}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CascadiaAPITest", "CascadiaAPITest\CascadiaAPITest.csproj", "{93195619-2359-4D5A-B2FB-F47A9924060D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD0CAFF-C02C-4E06-9445-0748AAB88F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD0CAFF-C02C-4E06-9445-0748AAB88F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD0CAFF-C02C-4E06-9445-0748AAB88F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD0CAFF-C02C-4E06-9445-0748AAB88F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93195619-2359-4D5A-B2FB-F47A9924060D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93195619-2359-4D5A-B2FB-F47A9924060D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93195619-2359-4D5A-B2FB-F47A9924060D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93195619-2359-4D5A-B2FB-F47A9924060D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91E9AD65-C73A-4048-A4BF-F9F51BA0DDE3}
+	EndGlobalSection
+EndGlobal
