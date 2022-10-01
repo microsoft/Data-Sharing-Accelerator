@@ -1,15 +1,5 @@
 # Disaster Response Data Sharing Accelerator
 
-> REMOVE This repo has been populated by an initial template to help get you started. Please
-> REMOVE make sure to update the content to build a great experience for community-building.
-
-REMOVE As the maintainer of this project, please make a few updates:
-
-- REMOVE Improving this README.MD file to provide a great experience
-- REMOVE Updating SUPPORT.MD with content about this project's support experience
-- REMOVE Understanding the security reporting process in SECURITY.MD
-- REMOVE Remove this section from the README
-
 ## Executive Summary
 
 The Disaster Response Data Sharing Accelerator is a solution that provides near real-time data sharing based on an open data standard during a disaster or similar event.  This first package on GitHub has been developed to share data between participating partner organizations. It provides a medium for organizations in need of resources (food, water, etc.) to connect with organizations that have those resources available. This solution will also work beyond the initial use case such as for assessments.
@@ -42,7 +32,7 @@ Both resource provider and resource requestor organizations must also have the t
 
 ## 3. Architecture Diagram
 
-(images/architecture_diagram.png)
+![](images/architecture_diagram.png)
 
 *	Azure Data Lake Storage Gen2: Responsible for storing the history of requests and triggering the Azure Functions to handle the data.
 *	Azure Functions: Responsible to process, send and receive data from EventHubs. It also saves the data in SQL Server.
