@@ -10,7 +10,7 @@ The Disaster Response Data Sharing Accelerator was built from a US-based effort 
 * Create an Azure Resource Group called “Cascadia”
   * Additional details available here: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
-![](images/create_azure_function.png)
+![](images/create_resource_group.png)
 
 * Go to the root folder containing the Cascadia cloned file and execute the main .bicep file
   * Additional details available here: https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep 
@@ -53,4 +53,38 @@ The Disaster Response Data Sharing Accelerator was built from a US-based effort 
 ![](images/deploy.png)
 
 ## 3. Deploying an API component
+
+* 1. Build required source code (assumes that a .net environment is installed):
+  * a)	Clone the Git Repository
+  * b)	Navigate to CascadiaAPI directory inside Git Repository
+  * c)	Build Cascadia API (see commands below)
+    * i.	dotnet restore
+    * ii.	dotnet publish -c Release
+* 2.	Zip the Cascadia API build artifacts:
+  * a)	Compress-Archive -path .\bin\Release\netcoreapp3.1\publish\* -destinationpath .\cascadia-api.zip -Force
+  * Take note of the path to the zip file as this will be referenced in **Step 3** immediately below
+* 3.	Deploy Cascadia API to Azure:
+  * a)	Follow the instructions via this hyperlink to deploy the Cascadia API: [Deploy files to App Service - Azure App Service | Microsoft Docs](https://learn.microsoft.com/en-us/azure/app-service/deploy-zip?tabs=powershell#deploy-a-zip-package)
+
+## 4. Provisioning and Deploying a UI Component
+
+* Prerequisites
+  * NodeJS
+  * An M365 account
+  * [Teams Toolkit Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) version after 1.55 or [TeamsFx CLI](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teamsfx-cli)
+
+* User Configurations
+  * 1.	Reference Cascadia App source code file via GitHub (.env.teamsfx.dev)
+    * REACT_APP_VIEW_NAME=
+    * REACT_APP_PARTNER_NAME=
+    * REACT_APP_STORAGE_CONNECTION_STRING=
+    * REACT_APP_API_ENDPOINT= 
+    * a.	Set View Name = to Requestor or Provider, depending on your status
+    * b.	Set Partner Name = to match how your organization is listed in the database
+    * c.	Set Connection String = to SaaS Token for Data Lake Storage (only applies to requestors)
+    * d.	Set API Endpoint = to match the Endpoint URL that results from GitHub actions
+  * 2.	Reference Cascadia App source code file via GitHub (config.dev.json)
+    * a)	Reference line "reportendpoint" : "<PowerBI URI>"
+    * b)	Set <PowerBI URI> = (Get this URI from your PowerBI administrator and reference the section at the end of this document on implementing the PowerBI service).
+
 
