@@ -136,7 +136,7 @@ The Disaster Response Data Sharing Accelerator was built from a US-based effort 
   10.	Click ‘Ok’, which returns you to the ‘Configuration’ window
   11.	Click ‘Save’ from the top menu bar
 
-## II.	How to Access & Use the Environment
+## II. How to Access & Use the Environment
 (Specific Guidance Related to the UI and Power BI Components)
 The instructions provided in this section demonstrate how to perform key actions for the two primary users of the platform – **Resource Requestors** and **Resource Providers**. Depending on which category your organization aligns to, refer to the corresponding section.  All users need to complete the steps provided immediately below under ‘Pinning the Cascadia App’.
 
@@ -150,19 +150,19 @@ The instructions provided in this section demonstrate how to perform key actions
 * Using the Platform
   * Resource Requestors - key user actions
     * How to make a request
-      1.	Complete the information required in the pre-configured request form (likely an Excel file) and save as a .csv file (the platform only accepts .csv files for upload)
-      2.	From the Welcome screen, choose the icon in the upper left that says ‘Upload File’
-      3.	Select the request form file that was saved
+      1. Complete the information required in the pre-configured request form (likely an Excel file) and save as a .csv file (the platform only accepts .csv files for upload)
+      2. From the Welcome screen, choose the icon in the upper left that says ‘Upload File’
+      3. Select the request form file that was saved
     * How to check the status of the request
-      1.	From the Welcome screen, refer to the Status column and information adjacent to your request
+      1. From the Welcome screen, refer to the Status column and information adjacent to your request
   * Resource Providers - key user actions
     * How to review existing requests for resources
-      1.	From the Welcome screen, all open and accepted requests will be visible
+      1. From the Welcome screen, all open and accepted requests will be visible
     * How to accept requests for resources
-      1.	From the Welcome screen, select an outstanding request in alignment with your available resources
-      2.	Use the selection checkmark options on the left and choose outstanding requests you want to accept. Checkmark those options
-      3.	Click the ‘Accept’ menu option that appears above the ‘Location’ column heading
-      4.	From the pop-up that says ‘Would you like to accept the requested items’, choose ‘save’ to accept or ‘cancel’
+      1. From the Welcome screen, select an outstanding request in alignment with your available resources
+      2. Use the selection checkmark options on the left and choose outstanding requests you want to accept. Checkmark those options
+      3. Click the ‘Accept’ menu option that appears above the ‘Location’ column heading
+      4. From the pop-up that says ‘Would you like to accept the requested items’, choose ‘save’ to accept or ‘cancel’
 
 * Enabling and Using Power BI Functionality
   * Power BI capabilities can be enabled but are *not* required to utilize the platform effectively.  The Power BI dashboard provides an aggregated view of both Resource Requestor and Resource Provider activity within the Cascadia platform – for example:
@@ -172,3 +172,65 @@ The instructions provided in this section demonstrate how to perform key actions
   * **Section 1.** details the simplest way to access Power BI regardless of current corporate or personal subscription status – via desktop installation.  
   * **Section 2.** provides guidance to those who either currently utilize or wish to utilize Power BI-Pro, which enables access from any internet-enabled device. 
   * **Section 3.** covers how to embed Power BI into the Teams application for ease of accessibility, and is a feature only available to Power BI Premium users.
+
+1. To access Power BI capabilities via desktop app installation
+   1. Download the Power BI application here:  https://powerbi.microsoft.com/en-us/desktop/
+   2. Open the Power BI application
+   3. Access the Cascadia Power BI file by selecting ‘File’, then ‘Open Report’.  Choose the Cascadia folder and navigate to the sub-folder titled ‘Power BI’.  Choose the file with a .pbix extension
+   4. Change the data source settings of the report to point to your local SQL server by following these steps (Note that this requires that you have ‘read permission’ first from the Cascadia Server):
+      a. Select ‘Home’ from menu at the top-left of the screen
+      b. From the ‘Home’ ribbon that displays, click ‘Transform data’, then choose ‘Data source settings’ from the drop-down menu.
+      c. From the ‘Data source settings’ pop-up window, click the ‘Change Source’ button at the bottom-left.
+      d. A pop-up titled ‘SQL Server database’ will appear.  Populate the two fields that are visible (‘Server’ and ‘Database’) with your local Cascadia SQL Server information.  Note that you will have already configured this information as part of installing the Cascadia environment.
+      e. Click ‘Ok’ after populating the aforementioned fields.
+      f. From the ‘Data source settings’ pop-up, choose ‘Edit Permissions’.
+      g. From the ‘Edit Permissions’ pop-up, click the ‘Edit’ button displayed under ‘Credentials’.
+      h. From the SQL Server database pop-up, choose the ‘Windows’ tab on the left, then select ‘Use my current credentials’ and click ‘Save’
+      i. In the Edit Permissions pop-up, click ‘Ok’
+      j. From the ‘Data source settings’ pop-up, click ‘close’
+
+2. Accessing Power BI Pro capabilities
+   * Power BI Pro is a per-user license.  Unlike the desktop version referenced above, it enables report access from any web-enabled device via www.powerbi.com.  If you are not currently a Power BI-Pro user and would like trial access, reference this link: www.powerbi.microsoft.com
+   * The instructions below will enable you to publish the Cascadia Power BI report to the web, enabling web-based access from any internet-enabled device going forward.  These steps only need to be completed once.
+     1. Complete all steps defined in prior section (unless Power BI desktop application is already installed)
+     2. Open the Power BI desktop application
+     3. Access the Cascadia Power BI file by selecting ‘File’, then ‘Open Report’.  Choose the Cascadia folder and navigate to the sub-folder titled ‘Power BI’.  Choose the file with a .pbix extension
+     4. Click the ‘Publish’ button on the home screen ribbon
+     5. From the ‘Publish to Power BI’ pop-up window, choose ‘My workspace’, which may be used as a default destination (you may also choose to create an alternative destination)
+     6. After completion, reports may be accessed from www.powerbi.com from any web-enabled device
+     7. Expanded detail on this process can be found here: [Publish from Power BI Desktop - Power BI | Microsoft Docs](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files)
+
+3. Embedding Power BI in the Teams Application (requires Power BI Premium)
+   * Embedding Power BI inside the Microsoft Teams app allows for ease of accessibility from within the Teams environment.  This is a capability only available for Power BI Premium users.  Power BI Premium is an enhanced version of Power BI only available as part of a corporate subscription and cannot be obtained by individuals.
+   * To embed Power BI in the Teams App:
+     1. Make sure you have completed all steps from sections 1 and 2 above, except for Step #5 in Section 2.  Regarding those instructions, modify the procedures in Step #5 as follows:
+        a. From the ‘Publish to Power BI’ pop-up window, choose a workspace backed by Power BI Premium capacity (if additional clarification is required, contact your organization’s Power BI administrator).
+     2. In Microsoft Teams, navigate to the Cascadia Teams Channel and click to expand and make all sub-channels visible.
+     3. Click on the ‘General’ sub-channel
+     4. Within the General sub-channel you will see menu options towards the top of the screen (‘Posts’, ‘Files’, etc.).  Click on the ‘+’ symbol in this area
+     5. From the ‘Add a Tab’ pop-up window, click on the ‘Power BI’ icon
+     6. From the Power BI pop-up window that appears, type ‘Cascadia’ in the search box
+     7. Click on ‘Cascadia’ to reveal available Power BI reports
+     8. Click on the BI report you wish to attach to the Teams channel, and select ‘Save’
+     9. You will now see a new tab in the ‘General’ section of the Cascadia Teams channel matching the name of your BI report.
+     10. Expanded detail on this process can be found here: https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-microsoft-teams
+
+## III. Extending the Data Sharing Solution
+   * Given the limited scope of the project by which this solution was created, extending this to fit a different business outcome is an expected next step.   Extension of this project may include but may not be limited to:  
+     1. Inclusion of addition tables to replicate data within the Front Line Humanitarian (FHL) data schema
+     2. Modification of additional fields in the existing tables
+     3. Extension to additional objects in the Nonprofit Common Data Model
+     4. Changing data schema completely
+   * To make these kinds of changes to the existing project, four pieces of code and logic would need to be altered:
+     1. Data schema
+     2. API for data movement from UI to SQL
+     3. Azure Functions for data movement across tenants
+     4. User interface
+
+* Data Schema
+  * In this implementation, there were just a couple tables that exist in the database.  The primary table for material request data was a table called Item_Request.  The table Item_Request definition was taken from the Nonprofit Common Data model.  It was taken from a portion of this open source data schema the relates to Frontline Humanitarian Logistics (FHL) standard as defined by Nethope.  Expanded details on both the open source CDM and the Nethope FHL standard can be found at the following links.
+    * [Nonprofit Common Data Model Accelerator - Github](https://github.com/microsoft/Industry-Accelerator-Nonprofit)
+    * [NonprofitCDM.org](https://www.nonprofitcdm.org/home)
+    * [Frontline Humanitarian Logistics | NetHope](https://nethope.org/programs/digital-inclusion/frontline-humanitarian-logistics/)
+  * From a technical perspective, adding additional tables to the SQL storage that is deployed as part of the infrastructure would require T-SQL experience to provide either CREATE TABLE or ALTER Table statements and a tool like SQL Management
+
