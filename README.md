@@ -54,8 +54,8 @@ Both resource provider and resource requestor organizations must also have the t
 
 *	CSV template for data
 *	Teams template
-*	The technical documentation and user guide for the Disaster Response Real-Time Data Sharing Accelerator is a separate document.
+*	The technical documentation and user guide for the Disaster Response Real-Time Data Sharing Accelerator is a separate document. You can find it here: [USERGUIDE](USERGUIDE.md)
 *	Sample demo script: [Cascadia Script]
-*	Data sharing template for a group collaborative to create an open data commons: [Nonprofits/Open Data Community Kit](https://github.com/microsoft/Nonprofits/tree/master/Open%20Data%20Community%20Kit)
+*	Data sharing template for a group collaborative to create an open data commons: [Open Data Community Kit](https://github.com/microsoft/Nonprofits/tree/master/Open%20Data%20Community%20Kit)
 
   
