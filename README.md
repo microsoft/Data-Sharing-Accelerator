@@ -53,7 +53,6 @@ Both resource provider and resource requestor organizations must also have the t
 ## 5. What’s in this Package
 
 *	[CSV template for data](https://github.com/microsoft/Data-Sharing-Accelerator/blob/main/Templates/data_template.csv)
-*	Teams template
 *	The technical documentation and user guide for the Disaster Response Real-Time Data Sharing Accelerator is a separate document. You can find it here: [User guide](USERGUIDE.md)
 *	Sample demo script: [Demo script](DEMOSCRIPT.md)
 *	Data sharing template for a group collaborative to create an open data commons: [Open Data Community Kit](https://github.com/microsoft/Nonprofits/tree/master/Open%20Data%20Community%20Kit)
