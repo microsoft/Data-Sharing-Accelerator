@@ -43,7 +43,7 @@ Both resource provider and resource requestor organizations must also have the t
 
 ## 4.	Requirements
 
-*	Incoming Data format – Data that is shared between organizations needs to follow a standardized template. The current resource solution matching template can be downloaded here:	<Insert Hyperlink>
+*	Incoming Data format – Data that is shared between organizations needs to follow a standardized template. The current resource solution matching template can be downloaded [here.](https://github.com/microsoft/Data-Sharing-Accelerator/blob/main/Templates/data_template.csv)
 *	For Microsoft based organizations, the following licenses are required. Licenses
 * Non-Microsoft based organization will need to deploy the equivalent solutions to:
   *	SQL
@@ -52,7 +52,7 @@ Both resource provider and resource requestor organizations must also have the t
 
 ## 5. What’s in this Package
 
-*	CSV template for data
+*	[CSV template for data](https://github.com/microsoft/Data-Sharing-Accelerator/blob/main/Templates/data_template.csv)
 *	Teams template
 *	The technical documentation and user guide for the Disaster Response Real-Time Data Sharing Accelerator is a separate document. You can find it here: [User guide](USERGUIDE.md)
 *	Sample demo script: [Demo script](DEMOSCRIPT.md)
