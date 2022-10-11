@@ -6,9 +6,12 @@ The Disaster Response Data Sharing Accelerator was built from a US-based effort 
 
 ## 1. Provisioning Infrastructure and API
 
-Clone the repository containing the Cascadia source code
+Clone the repository containing the Cascadia source code.
+
 Create an Azure Resource Group called “Cascadia”.
-* Additional details available here: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
+
+Additional details available here:  
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
 
 ![](images/create_resource_group.png)
 
