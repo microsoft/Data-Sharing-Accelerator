@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@azure/storage-blob": "12.5.0",
+        "@azure/storage-blob": "12.13.0",
         "@fluentui/react": "^8.41.4",
         "@fluentui/react-hooks": "^8.3.6",
         "@fluentui/react-northstar": "^0.54.0",
