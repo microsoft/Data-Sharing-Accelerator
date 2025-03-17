@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is no longer being actively maintained and will be removed from GitHub on December 31, 2025.
+
 # Disaster Response Data Sharing Accelerator
 
 ## Executive Summary
